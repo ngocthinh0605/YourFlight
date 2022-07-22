@@ -1,0 +1,13 @@
+.TimePickerFilter {
+    .ant-picker-input {
+        input {
+            &::placeholder {
+                color: black;
+                opacity: 1;
+                /* Firefox */
+            }
+            font-size: 12px !important;
+            line-height: 18px !important;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.TabFlightDetailCustom {
+    .ant-tabs-nav-wrap {
+        .ant-tabs-nav-list {
+            .ant-tabs-tab {
+                padding-bottom: 0;
+            }
+            .ant-tabs-tab-btn {
+                font-weight: 600;
+            }
+            .ant-tabs-tab-btn[aria-selected='false'] {
+                opacity: .4;
+            }
+        }
+    }
+}

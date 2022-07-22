@@ -1,0 +1,67 @@
+.HomeContainer {
+    background: url(../../Assets/Images/BackgroudLadingPage.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.TicketContentRight {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    position: relative;
+    margin-right: -8px;
+    &:before {
+        content: "";
+        top: 28px;
+        right: -2px;
+        position: absolute;
+        width: 24px;
+        height: 50px;
+        background-color: white;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-right: 0;
+        box-sizing: border-box;
+    }
+}
+
+.TicketContentLeft {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    position: relative;
+    margin-left: -8px;
+    &:before {
+        content: "";
+        top: 28px;
+        left: -2px;
+        position: absolute;
+        width: 24px;
+        height: 50px;
+        background-color: white;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-left: 0;
+        box-sizing: border-box;
+    }
+}
+
+.Departure {
+    opacity: .4;
+    &.active {
+        border-color: black;
+        border-bottom: 1px solid;
+        opacity: 1;
+        &>div {
+            position: relative;
+            top: -4px;
+        }
+    }
+}
+
+.SearchFlights {
+    right: 32px;
+    bottom: -27px;
+}
