@@ -33,14 +33,14 @@ const FlightDetail = ({
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <div>{AirLine[flightDetail.AirlineCode as ObjectKey]['img']}</div>
-            <div className="text-code-s font-semibold ml-3">
+            <div className="ml-3 font-semibold text-code-s">
               {AirLine[flightDetail.AirlineCode as ObjectKey]['label']}
             </div>
           </div>
           <div className="">
             <div className="flex items-center">
               <div className="mr-4">
-                <div className="text-code-s font-semibold pb-1">
+                <div className="pb-1 font-semibold text-code-s">
                   {FormatDate(flightDetail?.StartDate).Time}
                 </div>
                 <div>
@@ -55,7 +55,7 @@ const FlightDetail = ({
                 <div className="text-code-s">Direct</div>
               </div>
               <div className="ml-4">
-                <div className="text-code-s font-semibold pb-1">
+                <div className="pb-1 font-semibold text-code-s">
                   {FormatDate(flightDetail?.EndDate).Time}
                 </div>
                 <div>
@@ -71,7 +71,7 @@ const FlightDetail = ({
               </div>
               <div>
                 Baggage{' '}
-                <span className="text-content-primary font-semibold">{flightDetail?.Freebag}</span>
+                <span className="font-semibold text-content-primary">{flightDetail?.Freebag}</span>
               </div>
             </div>
             <div className="flex items-center">
@@ -79,7 +79,7 @@ const FlightDetail = ({
                 <img src={cutlery} alt="" />
               </div>
               <div>
-                In-flight <span className="text-content-primary font-semibold">Meal</span>
+                In-flight <span className="font-semibold text-content-primary">Meal</span>
               </div>
             </div>
           </div>
@@ -89,7 +89,7 @@ const FlightDetail = ({
                 flightDetail.ChargeAdult + flightDetail.PriceAdult + flightDetail.TaxAdult
               )}
             </div>
-            <div className="font-semibold  text-content-secondary">
+            <div className="font-semibold text-content-secondary">
               {numberToCurrency(
                 flightDetail.ChargeAdult + flightDetail.PriceAdult + flightDetail.TaxAdult
               )}
@@ -108,7 +108,7 @@ const FlightDetail = ({
                 <div className="flex justify-center">
                   <div className="flex flex-col text-center ">
                     <div className="flex-1">
-                      <div className="text-code-s font-semibold">
+                      <div className="font-semibold text-code-s">
                         {FormatDate(flightDetail?.StartDate).Time}
                       </div>
                       <div className="text-code-s">
@@ -117,7 +117,7 @@ const FlightDetail = ({
                     </div>
                     <div className="flex-1">{FormatHour(flightDetail.Duration)}</div>
                     <div className="flex-1">
-                      <div className="text-code-s font-semibold">
+                      <div className="font-semibold text-code-s">
                         {FormatDate(flightDetail?.EndDate).Time}
                       </div>
                       <div className="text-code-s">
@@ -131,7 +131,7 @@ const FlightDetail = ({
                   </div>
                   <div className="flex flex-col ">
                     <div className="flex-1">
-                      <div className="text-code-s font-semibold">
+                      <div className="font-semibold text-code-s">
                         {PointSym[flightDetail.StartPoint as ObjectKey]['label']}
                       </div>
                       <div className="text-code-s">
@@ -140,7 +140,7 @@ const FlightDetail = ({
                     </div>
                     <div className="flex-1 invisible"></div>
                     <div className="flex-1">
-                      <div className="text-code-s font-semibold">
+                      <div className="font-semibold text-code-s">
                         {PointSym[flightDetail.EndPoint as ObjectKey]['label']}
                       </div>
                       <div className="text-code-s">
@@ -153,10 +153,10 @@ const FlightDetail = ({
                   <div className="flex items-center">
                     <div>{AirLine[flightDetail.AirlineCode as ObjectKey]['img']}</div>
                     <div className="ml-3">
-                      <div className="text-code-s font-semibold ">
+                      <div className="font-semibold text-code-s ">
                         {AirLine[flightDetail.AirlineCode as ObjectKey]['label']}
                       </div>
-                      <div className="text-code-s flex items-center">
+                      <div className="flex items-center text-code-s">
                         {flightDetail.RelatedFlights[0].FlightNumber}
                         <span className="h-[3px] w-[3px] bg-black rounded-[100%] inline-block mx-1"></span>
                         {flightDetail.GroupClass}
@@ -209,14 +209,14 @@ const FlightDetail = ({
             <TabPane tab="FARE INFO" key="2">
               <div className="flex pb-[35px]">
                 <div className="flex-1 ">
-                  <div className="text-code-s font-semibold">CONDITIONS</div>
+                  <div className="font-semibold text-code-s">CONDITIONS</div>
                   <div className="flex items-center mt-[15px]">
                     <div>{AirLine[flightDetail.AirlineCode as ObjectKey]['img']}</div>
                     <div className="ml-3">
-                      <div className="text-code-s font-semibold ">
+                      <div className="font-semibold text-code-s ">
                         {AirLine[flightDetail.AirlineCode as ObjectKey]['label']}
                       </div>
-                      <div className="text-code-s flex items-center">
+                      <div className="flex items-center text-code-s">
                         {flightDetail.RelatedFlights[0].FlightNumber}
                         <span className="h-[3px] w-[3px] bg-black rounded-[100%] inline-block mx-1"></span>
                         {flightDetail.GroupClass}
@@ -242,11 +242,11 @@ const FlightDetail = ({
                   <div className="text-code-xs mt-[15px]">Non - Refundable</div>
                 </div>
                 <div className="flex-1">
-                  <div className="text-code-s font-semibold">PRICE DETAILS</div>
+                  <div className="font-semibold text-code-s">PRICE DETAILS</div>
                   <div className="text-code-s mt-[15px] border-b ">
                     <div className="flex items-center ">
                       <div className="flex-1 pb-1">Adult Basic Fare (x1)</div>
-                      <div className="font-semibold flex-1 pb-1">
+                      <div className="flex-1 pb-1 font-semibold">
                         {numberToCurrency(
                           flightDetail.ChargeAdult + flightDetail.PriceAdult + flightDetail.TaxAdult
                         )}
@@ -265,13 +265,13 @@ const FlightDetail = ({
                       </div>
                     </div>
                     <div className="flex items-center ">
-                      <div className="flex-1 text-content-secondary pb-1">Save</div>
+                      <div className="flex-1 pb-1 text-content-secondary">Save</div>
                       <div className="flex-1 pb-1">0</div>
                     </div>
                   </div>
                   <div className="flex items-center ">
-                    <div className=" flex-1 ">You pay</div>
-                    <div className=" flex-1 font-semibold text-content-secondary">
+                    <div className="flex-1 ">You pay</div>
+                    <div className="flex-1 font-semibold text-content-secondary">
                       {numberToCurrency(
                         flightDetail.ChargeAdult + flightDetail.PriceAdult + flightDetail.TaxAdult
                       )}

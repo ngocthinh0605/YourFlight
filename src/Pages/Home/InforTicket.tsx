@@ -39,15 +39,15 @@ const InforTicket = () => {
           <div className="flex items-center">
             <div className="flex items-center">
               <div>
-                <RiCheckboxBlankCircleFill size={24} className="text-content-rectangle mr-1" />
+                <RiCheckboxBlankCircleFill size={24} className="mr-1 text-content-rectangle" />
               </div>
-              <div className="text-code-s font-semibold">One way / Round-trip</div>
+              <div className="font-semibold text-code-s">One way / Round-trip</div>
             </div>
             <div className="flex items-center ml-5">
               <div>
-                <RiRecordCircleFill size={24} className="text-content-primary mr-1" />
+                <RiRecordCircleFill size={24} className="mr-1 text-content-primary" />
               </div>
-              <div className="text-code-s font-semibold">Multi-city</div>
+              <div className="font-semibold text-code-s">Multi-city</div>
             </div>
             <div>
               <div className="font-semibold ml-[50px]">
@@ -86,26 +86,26 @@ const InforTicket = () => {
           <div>
             <div className="pt-5">
               <div className="flex items-center">
-                <div className="pt-4 pb-3 pl-5 cursor-pointer TicketContentRight hover:before:border-content-primary hover:before:border-2 hover:border-content-primary hover:border-2 rounded-xl min-w-[300px]">
-                  <div className="text-body-xs font-semibold opacity-50">FROM</div>
-                  <div className="text-heading-l text-content-primary font-semibold">DA NANG</div>
-                  <div className="text-code-s font-semibold">Quang Nam, Viet Nam</div>
+                <div className="box-border pt-4 pb-3 pl-5 cursor-pointer TicketContentRight hover:before:border-content-primary hover:before:border-2 hover:border-content-primary hover:border-2 rounded-xl min-w-[300px]">
+                  <div className="font-semibold opacity-50 text-body-xs">FROM</div>
+                  <div className="font-semibold text-heading-l text-content-primary">DA NANG</div>
+                  <div className="font-semibold text-code-s">Quang Nam, Viet Nam</div>
                 </div>
-                <div className="cursor-pointer z-10">
+                <div className="z-10 cursor-pointer">
                   <img src={ArrowLeftRight} alt="" />
                 </div>
-                <div className="pt-4 pb-3 cursor-pointer TicketContentLeft hover:before:border-content-primary hover:before:border-2 hover:border-content-primary hover:border-2 rounded-xl min-w-[300px] pl-[40px]">
-                  <div className="text-body-xs font-semibold opacity-50">TO</div>
-                  <div className="text-heading-l text-content-primary font-semibold">
+                <div className="box-border pt-4 pb-3 cursor-pointer TicketContentLeft hover:before:border-content-primary hover:before:border-2 hover:border-content-primary hover:border-2 rounded-xl min-w-[300px] pl-[40px]">
+                  <div className="font-semibold opacity-50 text-body-xs">TO</div>
+                  <div className="font-semibold text-heading-l text-content-primary">
                     Ho Chi Minh
                   </div>
-                  <div className="text-code-s font-semibold">Viet Nam</div>
+                  <div className="font-semibold text-code-s">Viet Nam</div>
                 </div>
-                <div className="px-5 py-4 border flex-1 box-border ml-5 rounded-xl">
+                <div className="box-border flex-1 px-5 py-4 ml-5 border rounded-xl">
                   <div className="flex items-center">
                     <div className="flex-1">
-                      <div className="text-body-xs font-semibold opacity-50">DEPARTURE</div>
-                      <div className="text-heading-l text-content-primary font-semibold">
+                      <div className="font-semibold opacity-50 text-body-xs">DEPARTURE</div>
+                      <div className="font-semibold text-heading-l text-content-primary">
                         <div className="flex items-center">
                           <div className="mr-2">Fri, 22 Mar, 2022</div>
                           <img src={Calendar} alt="" />
@@ -113,18 +113,18 @@ const InforTicket = () => {
                       </div>
                       <div className="text-code-s ">
                         <div className="flex items-center">
-                          <div className="mr-4 Departure active font-semibold">
+                          <div className="mr-4 font-semibold Departure active">
                             <div>Prev</div>
                           </div>
-                          <div className="mr-4 Departure font-semibold">
+                          <div className="mr-4 font-semibold Departure">
                             <div>Next</div>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div className="flex-1">
-                      <div className="text-body-xs font-semibold opacity-50">RETURN</div>
-                      <div className="text-heading-l text-content-primary font-semibold">
+                      <div className="font-semibold opacity-50 text-body-xs">RETURN</div>
+                      <div className="font-semibold text-heading-l text-content-primary">
                         <div className="flex items-center">
                           <div className="mr-2">Fri, 22 Mar, 2022</div>
                           <img src={Calendar} alt="" />
@@ -132,11 +132,11 @@ const InforTicket = () => {
                       </div>
                       <div className="text-code-s ">
                         <div className="flex items-center">
-                          {/* <div className="mr-4 Departure active font-semibold"> */}
-                          <div className="mr-4 Departure font-semibold">
+                          {/* <div className="mr-4 font-semibold Departure active"> */}
+                          <div className="mr-4 font-semibold Departure">
                             <div>Prev</div>
                           </div>
-                          <div className="mr-4 Departure font-semibold">
+                          <div className="mr-4 font-semibold Departure">
                             <div>Next</div>
                           </div>
                         </div>

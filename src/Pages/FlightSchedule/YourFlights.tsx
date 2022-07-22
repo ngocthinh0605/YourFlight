@@ -23,7 +23,7 @@ const YourFlights = ({ yourFlight }: { yourFlight: FlightType }) => {
             </div>
             <div>
               <div className="text-code-s">{FormatDate(yourFlight?.StartDate).Date}</div>
-              <div className="text-code-s font-semibold">
+              <div className="font-semibold text-code-s">
                 {(PointSym[yourFlight.StartPoint as ObjectKey]['label'] as string).slice(0, -5)} -{' '}
                 {(PointSym[yourFlight.EndPoint as ObjectKey]['label'] as string).slice(0, -5)}
               </div>
@@ -40,7 +40,7 @@ const YourFlights = ({ yourFlight }: { yourFlight: FlightType }) => {
                 <div className="text-code-s">
                   {AirLine[yourFlight.AirlineCode as ObjectKey]['label']}
                 </div>
-                <a className="text-body-s text-content-primary font-semibold" href="#">
+                <a className="font-semibold text-body-s text-content-primary" href="#">
                   Details
                 </a>
               </div>
@@ -50,7 +50,7 @@ const YourFlights = ({ yourFlight }: { yourFlight: FlightType }) => {
             <div>
               <div className="flex items-center justify-between">
                 <div>
-                  <div className="text-code-s font-semibold pb-1">
+                  <div className="pb-1 font-semibold text-code-s">
                     {FormatDate(yourFlight?.StartDate).Time}
                   </div>
                   <div>
@@ -65,7 +65,7 @@ const YourFlights = ({ yourFlight }: { yourFlight: FlightType }) => {
                   <div className="text-code-s">Direct</div>
                 </div>
                 <div>
-                  <div className="text-code-s font-semibold pb-1">
+                  <div className="pb-1 font-semibold text-code-s">
                     {FormatDate(yourFlight?.EndDate).Time}
                   </div>
                   <div>
@@ -87,7 +87,7 @@ const YourFlights = ({ yourFlight }: { yourFlight: FlightType }) => {
               </div>
               <div>
                 <div className="text-code-s">{FormatDate(yourFlight?.EndDate).Date}</div>
-                <div className="text-code-s font-semibold">
+                <div className="font-semibold text-code-s">
                   {(PointSym[yourFlight.EndPoint as ObjectKey]['label'] as string).slice(0, -5)} -{' '}
                   {(PointSym[yourFlight.StartPoint as ObjectKey]['label'] as string).slice(0, -5)}
                 </div>

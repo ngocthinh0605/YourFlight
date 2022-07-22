@@ -26,7 +26,7 @@ const Home: React.FC<FlightScheduleType> = ({ data, loading, error }) => {
                   <div>Hello!</div>
                   <div>Where are</div>
                   <div>
-                    you <span className="text-content-primary font-semibold">flying</span> to ...
+                    you <span className="font-semibold text-content-primary">flying</span> to ...
                   </div>
                 </div>
               </div>

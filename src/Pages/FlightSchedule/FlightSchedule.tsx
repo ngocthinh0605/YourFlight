@@ -132,10 +132,10 @@ const FlightSchedule: React.FC<FlightScheduleType> = ({ data, loading, error }) 
         <div className="max-w-[1230px] mx-auto pt-5">
           <div className="flex items-center justify-between">
             <div>
-              <div className="text-body-m text-content-primary font-semibold">
+              <div className="font-semibold text-body-m text-content-primary">
                 {YourFlight && PointSym[YourFlight.StartPoint as ObjectKey]['label']}
               </div>
-              <div className="text-body-xs text-black">
+              <div className="text-black text-body-xs">
                 {YourFlight && FormatDate(YourFlight?.StartDate).Date}
               </div>
             </div>
@@ -145,22 +145,22 @@ const FlightSchedule: React.FC<FlightScheduleType> = ({ data, loading, error }) 
               </div>
             </div>
             <div>
-              <div className="text-body-m text-content-primary font-semibold">
+              <div className="font-semibold text-body-m text-content-primary">
                 {YourFlight && PointSym[YourFlight.EndPoint as ObjectKey]['label']}
               </div>
-              <div className="text-body-xs text-black">
+              <div className="text-black text-body-xs">
                 {YourFlight && FormatDate(YourFlight?.EndDate).Date}
               </div>
             </div>
             <div className="flex items-center justify-between">
-              <div className="text-black text-code-s font-semibold pr-4 border-r">Round-trip</div>
+              <div className="pr-4 font-semibold text-black border-r text-code-s">Round-trip</div>
               <div className="flex items-center font-semibold">
-                <div className="mr-1 px-4 border-r">
+                <div className="px-4 mr-1 border-r">
                   <span className="text-code-s text-content-primary ">02</span> Adult,{' '}
                   <span className="text-code-s text-content-primary ">01</span> children
                 </div>
               </div>
-              <div className="text-black text-code-s font-semibold pl-4">
+              <div className="pl-4 font-semibold text-black text-code-s">
                 {YourFlight && YourFlight.GroupClass}
               </div>
             </div>
