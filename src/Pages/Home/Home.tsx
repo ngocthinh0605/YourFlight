@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Divider } from 'antd';
 
 import InforTicket from './InforTicket';
 import Footer from '../../Components/Layout/Footer';

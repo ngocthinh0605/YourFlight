@@ -9,7 +9,6 @@ import { FlightType } from 'FlightType';
 import { AirLine, PointSym, TypeFilter, PriceFilter } from '../../Contant';
 import { FormatDate } from '../../Utils';
 import { DefaultValueFlight } from './Constant';
-import moment from 'moment';
 type FlightScheduleType = {
   data?: FlightType[];
   loading?: boolean;

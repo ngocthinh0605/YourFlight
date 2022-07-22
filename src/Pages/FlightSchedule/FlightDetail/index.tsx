@@ -1,5 +1,4 @@
 import React from 'react';
-import Bamboo from '../../../Assets/Icons/Bamboo.svg';
 import { Tabs } from 'antd';
 
 const { TabPane } = Tabs;
