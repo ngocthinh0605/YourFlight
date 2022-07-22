@@ -161,7 +161,7 @@ const FlightSchedule: React.FC<FlightScheduleType> = ({ data, loading, error }) 
                 </div>
               </div>
               <div className="text-black text-code-s font-semibold pl-4">
-                {YourFlight.GroupClass}
+                {YourFlight && YourFlight.GroupClass}
               </div>
             </div>
             <div>
