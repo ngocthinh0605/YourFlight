@@ -9,6 +9,7 @@ import { FlightType } from 'FlightType';
 import { AirLine, PointSym, TypeFilter, PriceFilter } from '../../Contant';
 import { FormatDate } from '../../Utils';
 import { DefaultValueFlight } from './Constant';
+import Footer from '../../Components/Layout/Footer';
 type FlightScheduleType = {
   data?: FlightType[];
   loading?: boolean;
@@ -190,6 +191,11 @@ const FlightSchedule: React.FC<FlightScheduleType> = ({ data, loading, error }) 
             </div>
           </div>
           <div className="col-span-3">{YourFlight && <YourFlights yourFlight={YourFlight} />}</div>
+        </div>
+      </div>
+      <div>
+        <div className="max-w-[1230px] mx-auto py-10">
+          <Footer />
         </div>
       </div>
     </div>
